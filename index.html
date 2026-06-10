@@ -151,6 +151,35 @@
             font-size: 0.9em;
             color: #ccc;
         }
+        /* =========================================
+           DISEÑO RESPONSIVO (SOLO PARA CELULARES) 
+           ========================================= */
+        @media (max-width: 768px) {
+            /* Hacemos que el contenedor principal ocupe casi toda la pantalla */
+            .main-content {
+                width: 95%;
+                flex-direction: column; /* Apila todo verticalmente */
+                align-items: center;
+            }
+
+            /* Hacemos que las cajas ocupen el 100% del espacio en celular */
+            section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            /* Achicamos un poco el título principal para que no se corte */
+            header h1 {
+                font-size: 2em;
+                padding: 0 10px;
+            }
+
+            /* Ajustamos los adornos (emojis) de las esquinas para que no se salgan */
+            .about-me:after, .about-me:before,
+            .course-item:before, .course-item:after {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
