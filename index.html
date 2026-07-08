@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Joaquin Gutierrez Pilco | Portafolio</title>
+    <title>Pablo Joaquin Gutierrez Pilco | Portfolio</title>
     
-    <!-- Etiqueta de Google Search Console -->
+    <!-- Google Search Console Tag -->
     <meta name="google-site-verification" content="" />
 
     <style>
         /* =========================================
-           VARIABLES Y CONFIGURACIÓN GLOBAL
+           VARIABLES & GLOBAL CONFIGURATION
            ========================================= */
         :root {
             --bg-dark: #000000;
@@ -47,7 +47,7 @@
         }
 
         /* =========================================
-           FONDO FIJO CON EFECTO BLUR (fondow2.jpeg)
+           FIXED BACKGROUND WITH BLUR EFFECT
            ========================================= */
         #hero-bg {
             position: fixed;
@@ -61,7 +61,7 @@
         }
 
         /* =========================================
-           NAVEGACIÓN (NAVBAR) Y LOGO TEXTO
+           NAVIGATION (NAVBAR)
            ========================================= */
         nav {
             position: fixed;
@@ -80,14 +80,13 @@
         }
 
         .logo {
-            font-size: 1.05em; /* Tamaño ajustado para el nombre completo */
+            font-size: 1.05em;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
             transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), text-shadow 0.4s ease;
         }
 
-        /* Interacción: Escala suave y brillo al pasar el cursor */
         .logo:hover {
             transform: scale(1.02);
             text-shadow: 0 0 15px rgba(255,255,255,0.6);
@@ -121,7 +120,7 @@
         }
 
         /* =========================================
-           ANIMACIÓN DE APARICIÓN AL BAJAR (FADE-UP)
+           FADE-UP ANIMATION
            ========================================= */
         .fade-up {
             opacity: 0;
@@ -135,7 +134,7 @@
         }
 
         /* =========================================
-           CONTENEDOR PRINCIPAL
+           MAIN CONTENT WRAPPER
            ========================================= */
         .content-wrapper {
             position: relative;
@@ -145,7 +144,7 @@
         }
 
         /* =========================================
-           SECCIÓN 1: INICIO (HERO)
+           SECTION 1: HERO
            ========================================= */
         .hero {
             position: absolute;
@@ -196,7 +195,7 @@
         }
 
         /* =========================================
-           SECCIÓN 2: SOBRE MÍ
+           SECTION 2: ABOUT ME
            ========================================= */
         .about {
             padding: 120px 8%;
@@ -212,7 +211,8 @@
             color: var(--text-muted);
             margin-bottom: 20px;
             font-size: 1.1em;
-            max-width: 800px;
+            max-width: 900px;
+            text-align: justify;
         }
 
         .stats-grid {
@@ -253,7 +253,7 @@
         }
 
         /* =========================================
-           SECCIÓN 3: ÁREAS DE INTERÉS
+           SECTION 3: AREAS OF INTEREST
            ========================================= */
         .skills {
             padding: 100px 8%;
@@ -305,7 +305,7 @@
         }
 
         /* =========================================
-           SECCIÓN 4: EDUCACIÓN Y CONTACTO
+           SECTION 4: EDUCATION & CONTACT
            ========================================= */
         .contact {
             padding: 120px 8%;
@@ -376,7 +376,7 @@
         }
 
         /* =========================================
-           DISEÑO RESPONSIVO (CELULARES)
+           RESPONSIVE DESIGN (MOBILE)
            ========================================= */
         @media (max-width: 900px) {
             .nav-links { display: none; }
@@ -385,69 +385,69 @@
             .skills-grid { grid-template-columns: 1fr; }
             .stats-grid { flex-direction: column; }
             footer { flex-direction: column; text-align: center; gap: 20px; }
-            .logo { font-size: 0.75em; letter-spacing: 1px; } /* Texto más pequeño en móviles */
+            .logo { font-size: 0.75em; letter-spacing: 1px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- FONDO FIJO -->
+    <!-- FIXED BACKGROUND -->
     <div id="hero-bg"></div>
 
-    <!-- NAVBAR ACTUALIZADO CON NOMBRE COMPLETO -->
+    <!-- NAVBAR -->
     <nav id="navbar">
-        <a href="#inicio" class="logo">PABLO JOAQUIN GUTIERREZ PILCO</a>
+        <a href="#home" class="logo">PABLO JOAQUIN GUTIERREZ PILCO</a>
         <div class="nav-links">
-            <a href="#inicio">Home</a>
-            <a href="#sobre-mi">Perfil</a>
-            <a href="#enfoques">Intereses</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#home">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#focus">Interests</a>
+            <a href="#contact">Contact</a>
         </div>
-        <a href="mailto:pablo.gutierrez@ucsp.edu.pe" class="btn-outline">Contactar</a>
+        <a href="mailto:pablo.gutierrez@ucsp.edu.pe" class="btn-outline">Contact Me</a>
     </nav>
 
-    <!-- SECCIÓN 1: HERO (FIJA ARRIBA) -->
-    <section class="hero" id="inicio">
-        <div class="badge fade-up">Estudiante de Ciencia de la Computación</div>
-        <h1 class="fade-up" style="transition-delay: 0.1s;">Construyendo código.<br>Analizando datos.</h1>
-        <p class="fade-up" style="transition-delay: 0.2s;">Arequipa, Perú. Apasionado por la tecnología, el hacking ético y la innovación estructurada.</p>
+    <!-- SECTION 1: HERO -->
+    <section class="hero" id="home">
+        <div class="badge fade-up">Computer Science Student</div>
+        <h1 class="fade-up" style="transition-delay: 0.1s;">Architecting code.<br>Analyzing data.</h1>
+        <p class="fade-up" style="transition-delay: 0.2s;">Arequipa, Peru. Passionate about technology, ethical hacking, and structured innovation.</p>
         <div class="fade-up" style="transition-delay: 0.3s;">
-            <a href="#sobre-mi" class="btn-outline" style="width: max-content; pointer-events: auto;">Conoce mi perfil</a>
+            <a href="#about-me" class="btn-outline" style="width: max-content; pointer-events: auto;">Discover my profile</a>
         </div>
     </section>
 
-    <!-- CONTENEDOR PRINCIPAL QUE SUBE SOBRE EL HERO -->
+    <!-- MAIN CONTENT WRAPPER -->
     <div class="content-wrapper">
         
-        <!-- SECCIÓN 2: SOBRE MÍ -->
-        <section class="about fade-up" id="sobre-mi">
+        <!-- SECTION 2: ABOUT ME -->
+        <section class="about fade-up" id="about-me">
             <div class="about-text">
-                <div class="badge">Perfil</div>
-                <h2>Sobre Mí</h2>
-                <p>Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo. Me motiva profundamente comprender la arquitectura de los sistemas, la investigación de vulnerabilidades de datos y el hacking ético.</p>
-                <p>Disfruto el desarrollo en lenguajes como Python y C++, además de explorar campos innovadores como la aplicación de inteligencia artificial al scouting en el fútbol profesional. Mi objetivo es aportar valor mediante soluciones tecnológicas robustas y escalables.</p>
+                <div class="badge">Profile</div>
+                <h2>About Me</h2>
+                <p>I am a Computer Science student at Universidad Católica San Pablo. My academic and professional focus centers on understanding complex system architectures, data vulnerability research, and the core principles of ethical hacking. I am deeply invested in software engineering, developing robust algorithms and object-oriented solutions primarily utilizing high-performance languages such as Python and C++.</p>
+                <p>Beyond traditional computer science applications, I am actively researching the intersection of technology and sports analytics. Specifically, I am exploring how artificial intelligence models and advanced data structures can be leveraged to revolutionize scouting methodologies in professional football. As I progress in my career, my objective is to architect scalable, secure, and innovative technological solutions that address real-world challenges, continually expanding my expertise in cybersecurity and software development.</p>
                 
                 <div class="stats-grid">
                     <div class="stat-box">
-                        <h3>1er</h3>
-                        <p>Semestre en Curso</p>
+                        <h3>1st</h3>
+                        <p>Current Semester</p>
                     </div>
                     <div class="stat-box">
                         <h3>100%</h3>
-                        <p>Enfoque Analítico</p>
+                        <p>Analytical Focus</p>
                     </div>
                     <div class="stat-box">
                         <h3>4+</h3>
-                        <p>Certificaciones</p>
+                        <p>Certifications</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 3: ÁREAS DE INTERÉS -->
-        <section class="skills fade-up" id="enfoques">
+        <!-- SECTION 3: AREAS OF INTEREST -->
+        <section class="skills fade-up" id="focus">
             <div class="skills-header">
-                <h2>Mis Enfoques</h2>
+                <h2>My Focus Areas</h2>
             </div>
             <div class="skills-grid">
                 
@@ -456,8 +456,8 @@
                         <span>0 1</span>
                         <span>🛡️</span>
                     </div>
-                    <h3>Ciberseguridad</h3>
-                    <p>Investigación de vulnerabilidades de datos, auditoría de sistemas y aplicación de principios de hacking ético para proteger la información.</p>
+                    <h3>Cybersecurity</h3>
+                    <p>Conducting data vulnerability research, system auditing, and applying ethical hacking principles to secure modern information architectures.</p>
                 </div>
 
                 <div class="skill-card fade-up" style="transition-delay: 0.1s;">
@@ -465,8 +465,8 @@
                         <span>0 2</span>
                         <span>💻</span>
                     </div>
-                    <h3>Desarrollo</h3>
-                    <p>Estructuración de algoritmos y desarrollo de software orientado a objetos utilizando lenguajes de alto rendimiento como Python y C++.</p>
+                    <h3>Software Engineering</h3>
+                    <p>Structuring complex algorithms and developing object-oriented software utilizing high-performance programming languages such as Python and C++.</p>
                 </div>
 
                 <div class="skill-card fade-up" style="transition-delay: 0.2s;">
@@ -474,44 +474,44 @@
                         <span>0 3</span>
                         <span>⚽</span>
                     </div>
-                    <h3>IA & Scouting</h3>
-                    <p>Investigación sobre la aplicación de modelos de inteligencia artificial y análisis de datos enfocados al scouting en el fútbol profesional.</p>
+                    <h3>AI & Scouting</h3>
+                    <p>Researching the implementation of artificial intelligence models and advanced data analytics applied to professional football scouting and strategic planning.</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- SECCIÓN 4: EDUCACIÓN Y CONTACTO -->
-        <section class="contact fade-up" id="contacto">
-            <h2>Trayectoria y Contacto</h2>
+        <!-- SECTION 4: EDUCATION & CONTACT -->
+        <section class="contact fade-up" id="contact">
+            <h2>Background & Contact</h2>
             
             <div class="contact-grid">
-                <!-- Panel Izquierdo: Formación -->
+                <!-- Left Panel: Education -->
                 <div class="contact-panel fade-up">
-                    <h3 style="margin-bottom: 35px; font-size: 1.5em; border-bottom: 1px solid #222; padding-bottom: 15px;">Formación Académica</h3>
+                    <h3 style="margin-bottom: 35px; font-size: 1.5em; border-bottom: 1px solid #222; padding-bottom: 15px;">Academic Background</h3>
                     
                     <div class="contact-item">
-                        <h4>Cursos Actuales (UCSP)</h4>
+                        <h4>Current Courses (Universidad Católica San Pablo)</h4>
                         <p>Introducción a la Ciencia de la Computación, Fundamentos Matemáticos, Fundamentos de Programación, Lógica, Comunicación I, Vida Universitaria.</p>
                     </div>
                     
                     <div class="contact-item">
-                        <h4>Certificaciones</h4>
+                        <h4>Certifications</h4>
                         <p>• CS50: Introduction to Computer Science (Harvard)<br>
-                           • Certificación de Francés B2 (Alianza Francesa)<br>
-                           • Certificación de Inglés B2 (Natural English)<br>
+                           • French B2 Certification (Alianza Francesa)<br>
+                           • English B2 Certification (Natural English)<br>
                            • Colegio Internacional Peruano Británico</p>
                     </div>
 
                     <div class="contact-item">
-                        <h4>Referencias Académicas</h4>
+                        <h4>Academic References</h4>
                         <p>Ernesto Cuadros-Vargas, Rosmery Violeta Quispe Zavala, Luis Fernando Díaz Basurco, Julissa Giuliana Villanueva Llerena, Gabriela Ponce Reinoso.</p>
                     </div>
                 </div>
 
-                <!-- Panel Derecho: Enlaces -->
+                <!-- Right Panel: Links -->
                 <div class="contact-panel fade-up" style="transition-delay: 0.2s;">
-                    <h3 style="margin-bottom: 35px; font-size: 1.5em; border-bottom: 1px solid #222; padding-bottom: 15px;">Conecta conmigo</h3>
+                    <h3 style="margin-bottom: 35px; font-size: 1.5em; border-bottom: 1px solid #222; padding-bottom: 15px;">Connect with me</h3>
                     
                     <div class="contact-item">
                         <h4>LinkedIn</h4>
@@ -524,12 +524,12 @@
                     </div>
 
                     <div class="contact-item">
-                        <h4>Email Institucional</h4>
+                        <h4>Institutional Email</h4>
                         <a href="mailto:pablo.gutierrez@ucsp.edu.pe">pablo.gutierrez@ucsp.edu.pe</a>
                     </div>
 
                     <div class="contact-item">
-                        <h4>Email Personal</h4>
+                        <h4>Personal Email</h4>
                         <a href="mailto:pablogutierrezp2@gmail.com">pablogutierrezp2@gmail.com</a>
                     </div>
                 </div>
@@ -540,16 +540,16 @@
         <footer>
             <div>
                 <strong>PABLO GUTIERREZ PILCO</strong><br>
-                Estudiante de Ciencia de la Computación.
+                Computer Science Student.
             </div>
             <div>
-                &copy; 2026 Todos los derechos reservados.
+                &copy; 2026 All rights reserved.
             </div>
         </footer>
 
     </div>
 
-    <!-- SCRIPT PARA EFECTOS DE SCROLL -->
+    <!-- SCROLL EFFECTS SCRIPT -->
     <script>
         const heroBg = document.getElementById('hero-bg');
         const navbar = document.getElementById('navbar');
