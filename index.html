@@ -258,4 +258,340 @@
         }
 
         /* =========================================
-           SECCIÓN 3: Á
+           SECCIÓN 3: ÁREAS DE INTERÉS
+           ========================================= */
+        .skills {
+            padding: 100px 8%;
+            background-color: #030303;
+        }
+
+        .skills-header h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .skill-card {
+            background-color: var(--bg-card);
+            padding: 50px 35px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255,255,255,0.15);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.9);
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        .skill-card h3 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .skill-card p {
+            color: var(--text-muted);
+            font-size: 1em;
+            line-height: 1.7;
+        }
+
+        /* =========================================
+           SECCIÓN 4: EDUCACIÓN Y CONTACTO
+           ========================================= */
+        .contact {
+            padding: 120px 8%;
+            position: relative;
+            background-image: 
+                radial-gradient(circle at 15% 100%, rgba(15, 35, 30, 0.25) 0%, transparent 40%),
+                radial-gradient(circle at 85% 100%, rgba(20, 25, 35, 0.25) 0%, transparent 40%);
+        }
+
+        .contact h2 {
+            font-size: 3em;
+            margin-bottom: 60px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-panel {
+            background-color: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .contact-panel:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255,255,255,0.1);
+            background-color: rgba(15, 15, 15, 0.8);
+        }
+
+        .contact-item {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-item h4 {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .contact-item p, .contact-item a {
+            color: var(--text-muted);
+            font-size: 0.95em;
+        }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 40px 8%;
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 0.9em;
+            background-color: var(--bg-dark);
+        }
+
+        /* =========================================
+           DISEÑO RESPONSIVO (CELULARES)
+           ========================================= */
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 3.5em; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .stats-grid { flex-direction: column; }
+            footer { flex-direction: column; text-align: center; gap: 20px; }
+            .logo-img { height: 40px; } /* Logo un poco más pequeño en móviles */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hero-bg"></div>
+
+    <nav id="navbar">
+        <a href="#inicio" class="logo-container">
+            <img src="logo.jpg" alt="Logo Pablo Joaquin" class="logo-img">
+        </a>
+        <div class="nav-links">
+            <a href="#inicio">Home</a>
+            <a href="#sobre-mi">Perfil</a>
+            <a href="#enfoques">Intereses</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <a href="mailto:pablo.gutierrez@ucsp.edu.pe" class="btn-outline">Contactar</a>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="badge fade-up">Estudiante de Ciencia de la Computación</div>
+        <h1 class="fade-up" style="transition-delay: 0.1s;">Construyendo código.<br>Analizando datos.</h1>
+        <p class="fade-up" style="transition-delay: 0.2s;">Arequipa, Perú. Apasionado por la tecnología, el hacking ético y la innovación estructurada.</p>
+        <div class="fade-up" style="transition-delay: 0.3s;">
+            <a href="#sobre-mi" class="btn-outline" style="width: max-content; pointer-events: auto;">Conoce mi perfil</a>
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+        
+        <section class="about fade-up" id="sobre-mi">
+            <div class="about-text">
+                <div class="badge">Perfil</div>
+                <h2>Sobre Mí</h2>
+                <p>Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo. Me motiva profundamente comprender la arquitectura de los sistemas, la investigación de vulnerabilidades de datos y el hacking ético.</p>
+                <p>Disfruto el desarrollo en lenguajes como Python y C++, además de explorar campos innovadores como la aplicación de inteligencia artificial al scouting en el fútbol profesional. Mi objetivo es aportar valor mediante soluciones tecnológicas robustas y escalables.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>1er</h3>
+                        <p>Semestre en Curso</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Enfoque Analítico</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>4+</h3>
+                        <p>Certificaciones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills fade-up" id="enfoques">
+            <div class="skills-header">
+                <h2>Mis Enfoques</h2>
+            </div>
+            <div class="skills-grid">
+                
+                <div class="skill-card fade-up">
+                    <div class="skill-header">
+                        <span>0 1</span>
+                        <span>🛡️</span>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Investigación de vulnerabilidades de datos, auditoría de sistemas y aplicación de principios de hacking ético para proteger la información.</p>
+                </div>
+
+                <div class="skill-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="skill-header">
+                        <span>0 2</span>
+                        <span>💻</span>
+                    </div>
+                    <h3>Desarrollo</h3>
+                    <p>Estructuración de algoritmos y desarrollo de software orientado a objetos utilizando lenguajes de alto rendimiento como Python y C++.</p>
+                </div>
+
+                <div class="skill-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="skill-header">
+                        <span>0 3</span>
+                        <span>⚽</span>
+                    </div>
+                    <h3>IA & Scouting</h3>
+                    <p>Investigación sobre la aplicación de modelos de inteligencia artificial y análisis de datos enfocados al scouting en el fútbol profesional.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact fade-up" id="contacto">
+            <h2>Trayectoria y Contacto</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-panel fade-up">
+                    <h3 style="margin-bottom: 35px; font-size: 1.5em; border-bottom: 1px solid #222; padding-bottom: 15px;">Formación Académica</h3>
+                    
+                    <div class="contact-item">
+                        <h4>Cursos Actuales (UCSP)</h4>
+                        <p>Introducción a la Ciencia de la Computación, Fundamentos Matemáticos, Fundamentos de Programación, Lógica, Comunicación I, Vida Universitaria.</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>Certificaciones</h4>
+                        <p>• CS50: Introduction to Computer Science (Harvard)<br>
+                           • Certificación de Francés B2 (Alianza Francesa)<br>
+                           • Certificación de Inglés B2 (Natural English)<br>
+                           • Colegio Internacional Peruano Británico</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Referencias Académicas</h4>
+                        <p>Ernesto Cuadros-Vargas, Rosmery Violeta Quispe Zavala, Luis Fernando Díaz Basurco, Julissa Giuliana Villanueva Llerena, Gabriela Ponce Reinoso.</p>
+                    </div>
+                </div>
+
+                <div class="contact-panel fade-up" style="transition-delay: 0.2s;">
+                    <h3 style="margin-bottom: 35px; font-size: 1.5em; border-bottom: 1px solid #222; padding-bottom: 15px;">Conecta conmigo</h3>
+                    
+                    <div class="contact-item">
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/pablo-gutierrez-pilco-b85b542b8/" target="_blank">linkedin.com/in/pablo-gutierrez-pilco</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/SkilexZ" target="_blank">github.com/SkilexZ</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Email Institucional</h4>
+                        <a href="mailto:pablo.gutierrez@ucsp.edu.pe">pablo.gutierrez@ucsp.edu.pe</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Email Personal</h4>
+                        <a href="mailto:pablogutierrezp2@gmail.com">pablogutierrezp2@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <strong>PABLO GUTIERREZ PILCO</strong><br>
+                Estudiante de Ciencia de la Computación.
+            </div>
+            <div>
+                &copy; 2026 Todos los derechos reservados.
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const heroBg = document.getElementById('hero-bg');
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            let scrollPosition = window.scrollY;
+            
+            let blurValue = Math.min(scrollPosition / 40, 15);
+            let opacityValue = Math.max(1 - (scrollPosition / 800), 0.2);
+            
+            heroBg.style.filter = `blur(${blurValue}px)`;
+            heroBg.style.opacity = opacityValue;
+
+            if (scrollPosition > 50) {
+                navbar.style.padding = "15px 8%";
+                navbar.style.background = "rgba(0, 0, 0, 0.85)";
+            } else {
+                navbar.style.padding = "20px 8%";
+                navbar.style.background = "rgba(0, 0, 0, 0.5)";
+            }
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            observer.observe(el);
+        });
+        
+        setTimeout(() => {
+            document.querySelectorAll('.hero .fade-up').forEach((el) => {
+                el.classList.add('visible');
+            });
+        }, 100);
+    </script>
+</body>
+</html>
