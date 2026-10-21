@@ -1,284 +1,258 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Joaquin Gutierrez Pilco | Portafolio Profesional</title>
-    <meta name="description" content="Portafolio profesional de Pablo Joaquin Gutierrez Pilco. Especialista en Ciencia de la Computación, Python, Linux y Ciberseguridad.">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v7.0.6">
+    <!-- Preconexión para fuentes Google para máximo rendimiento de renderizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!-- SEO & OpenGraph Meta Tags -->
+    <meta name="google-site-verification" content="8dB3Rg6osJTNteu-ijgNmVrNSaWUHWtKtDgwMMQcFbM">
+    <title>Juan Rodrigo Callo Huayna | Desarrollador de Software · Ciencia de la Computación · C++ · Python · UI/UX</title>
+    <meta name="description" content="Estudiante de Ciencia de la Computación y desarrollador de software en Arequipa, Perú. Me enfoco en construir soluciones técnicas combinando programación algorítmica, optimización de sistemas y diseño UI/UX.">
+    <meta name="author" content="Juan Rodrigo Callo Huayna">
+    <meta property="og:title" content="Juan Rodrigo Callo Huayna | Desarrollador de Software · Ciencia de la Computación · C++ · Python · UI/UX">
+    <meta property="og:description" content="Estudiante de Ciencia de la Computación y desarrollador de software en Arequipa, Perú. Me enfoco en construir soluciones técnicas combinando programación algorítmica, optimización de sistemas y diseño UI/UX.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juan Rodrigo Callo Huayna | Desarrollador de Software · Ciencia de la Computación · C++ · Python · UI/UX">
+    <meta name="twitter:description" content="Estudiante de Ciencia de la Computación y desarrollador de software en Arequipa, Perú. Me enfoco en construir soluciones técnicas combinando programación algorítmica, optimización de sistemas y diseño UI/UX.">
+    <meta name="theme-color" content="#030303">
+    <!-- JSON-LD Person Schema -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Juan Rodrigo Callo Huayna","email":"mailto:rodri19calhu@gmail.com","jobTitle":"Desarrollador de Software · Ciencia de la Computación · C++ · Python · UI/UX","worksFor":{"@type":"EducationalOrganization","name":"Universidad Católica San Pablo"},"address":{"@type":"PostalAddress","addressLocality":"Arequipa","addressCountry":"PE"},"sameAs":["https://github.com/r19junior","https://linkedin.com/in/juan-rodrigo-callo-huayna-2493893a6/","https://codeforces.com/profile/Jrodri19","https://x.com/Rod19MIT","https://www.youtube.com/@RoDriCalHu","https://www.instagram.com/r19j.unior/","https://www.tiktok.com/@rodri_calhu","https://www.facebook.com/profile.php?id=61572510416110"]}
+    </script>
+    <link rel="stylesheet" href="/_astro/Footer.bdTfEBWP.css">
     <style>
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 1.2em;
-            background-color: #3b82f6;
-            vertical-align: middle;
-            animation: blink 1s step-end infinite;
+        .signal-flow-1[data-astro-cid-umtrk6u7]{stroke-dasharray:1200;animation:28s linear infinite signal-flow}
+        .signal-flow-2[data-astro-cid-umtrk6u7]{stroke-dasharray:1400;animation:34s linear infinite reverse signal-flow}
+        .signal-flow-3[data-astro-cid-umtrk6u7]{stroke-dasharray:1000;animation:24s linear infinite signal-flow}
+        @media (width<=768px){
+            .signal-flow-1[data-astro-cid-umtrk6u7],.signal-flow-2[data-astro-cid-umtrk6u7],.signal-flow-3[data-astro-cid-umtrk6u7]{stroke-width:24px!important;stroke-dasharray:none!important;animation:none!important}
         }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+        @media (prefers-reduced-motion:reduce){
+            .signal-flow-1[data-astro-cid-umtrk6u7],.signal-flow-2[data-astro-cid-umtrk6u7],.signal-flow-3[data-astro-cid-umtrk6u7]{stroke-dasharray:none!important;animation:none!important}
         }
-        .terminal-font {
-            font-family: 'Courier New', Courier, monospace;
+        .typing-wrapper[data-astro-cid-3i3tj75h]{white-space:nowrap;position:relative}
+        .typing-word[data-astro-cid-3i3tj75h]{text-align:left;min-width:5.2ch;display:inline-block}
+        .typing-cursor[data-astro-cid-3i3tj75h]{background:var(--color-gold-400);vertical-align:-.04em;width:.075em;height:.82em;margin-left:4px;display:inline-block;box-shadow:0 0 10px #e3bd5f99}
+        @media (prefers-reduced-motion:reduce){
+            .typing-cursor[data-astro-cid-3i3tj75h]{opacity:1!important;animation:none!important}
         }
-        .fade-in {
-            animation: fadeIn 0.5s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .project-card[data-astro-cid-jnje7wnl]{border-radius:var(--radius-xl);background:linear-gradient(145deg, #ffffff09, #ffffff02), var(--color-black-850);border:1px solid var(--color-border);position:relative;overflow:hidden;box-shadow:inset 0 1px #ffffff09,0 24px 80px #00000057}
+        .project-card[data-astro-cid-jnje7wnl]:hover{border-color:var(--color-border-red);transform:translateY(-4px)}
+        .project-card[data-astro-cid-jnje7wnl]:before{content:"";aspect-ratio:1;pointer-events:none;background:radial-gradient(circle,#bc2b3c29,#0000 68%);border-radius:50%;width:20rem;position:absolute;inset:auto -15% -40% auto}
     </style>
 </head>
-<body class="bg-gray-950 text-gray-200 font-sans leading-relaxed selection:bg-blue-600 selection:text-white antialiased">
-
-    <!-- Navbar -->
-    <nav class="fixed w-full bg-gray-950/80 backdrop-blur-md border-b border-gray-800 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter">PJGP<span class="text-blue-500">.</span></span>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-                <a href="#perfil" class="hover:text-white transition-colors">Perfil</a>
-                <a href="#habilidades" class="hover:text-white transition-colors">Habilidades</a>
-                <a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a>
-            </div>
+<body class="min-h-screen bg-[#030303] text-[#f3f3ef] antialiased selection:bg-[#bc2b3c]/40 selection:text-white relative overflow-x-hidden font-sans">
+    <!-- Brillos y gradientes ambientales profundos -->
+    <div class="fixed top-[-15%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#68101b]/15 blur-[160px] pointer-events-none -z-10 animate-pulse-glow" aria-hidden="true"></div>
+    <div class="fixed bottom-[-15%] right-[-10%] w-[650px] h-[650px] rounded-full bg-[#4b0b13]/12 blur-[170px] pointer-events-none -z-10 animate-pulse-glow" style="animation-delay: 3s;" aria-hidden="true"></div>
+    <div class="fixed top-[40%] right-[10%] w-[450px] h-[450px] rounded-full bg-[#d4a63a]/5 blur-[150px] pointer-events-none -z-10" aria-hidden="true"></div>
+    
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#030303]/85 backdrop-blur-xl border-b border-[rgba(255,255,255,0.08)] transition-all duration-300">
+        <div class="site-container h-[var(--header-height)] flex items-center justify-between">
+            <!-- Identidad minimalista tecnológica -->
+            <a href="#inicio" aria-label="Ir al inicio del portafolio de Juan Rodrigo Callo Huayna" class="flex items-center gap-2.5 font-bold text-[#f8f8f6] hover:text-[#dc4252] transition-colors group min-h-[44px]">
+                <span class="w-9 h-9 rounded-xl bg-[#32070c]/70 border border-[#bc2b3c]/60 flex items-center justify-center text-[#dc4252] font-code font-bold text-xs group-hover:scale-105 transition-transform shadow-md">JRC</span>
+                <span class="tracking-tight text-sm sm:text-base font-heading">Juan Rodrigo</span>
+            </a>
+            <!-- Navegación de escritorio limpia y técnica -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium" aria-label="Navegación principal">
+                <a href="#inicio" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Inicio</a>
+                <a href="#sobre-mi" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Sobre mí</a>
+                <a href="#especialidad" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Especialidad</a>
+                <a href="#experiencia" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Experiencia</a>
+                <a href="#proyectos" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Proyectos</a>
+                <a href="#habilidades" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Habilidades</a>
+                <a href="#educacion" class="text-[#b7b7b0] hover:text-[#f8f8f6] transition-colors text-xs font-sans py-2">Educación</a>
+                <a href="#contacto" class="px-4 py-2 rounded-xl metal-red text-[#f8f8f6] font-code font-bold text-xs shadow-md hover:brightness-110 transition-all min-h-[40px] flex items-center">Contacto</a>
+            </nav>
+            <!-- Botón menú móvil accesible 44px -->
+            <button id="mobile-nav-btn" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-nav-menu" class="md:hidden p-2.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] text-[#f3f3ef] hover:text-[#dc4252] focus:outline-none focus:ring-2 focus:ring-[#bc2b3c] min-h-[44px] min-w-[44px] flex items-center justify-center" data-bound="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="perfil" class="min-h-screen flex flex-col justify-center px-6 pt-20 max-w-6xl mx-auto">
-        <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white">
-                Pablo Joaquin <br/> Gutierrez Pilco
-            </h1>
-            <div class="text-xl md:text-2xl text-blue-400 font-medium mb-8 h-8 flex items-center">
-                <span id="typing-text"></span><span class="cursor"></span>
-            </div>
-            <p class="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl">
-                Estudiante de Ciencia de la Computación en la Universidad Católica San Pablo. 
-                Perfil técnico enfocado en la auditoría de redes, administración de entornos Linux y desarrollo 
-                de algoritmos eficientes en Python.
-            </p>
-            <div class="flex gap-4">
-                <a href="#proyectos" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                    Ver Proyectos
-                </a>
-                <a href="https://github.com/" target="_blank" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors border border-gray-700">
-                    GitHub
-                </a>
-            </div>
+        <div id="mobile-nav-menu" class="hidden md:hidden border-t border-[rgba(255,255,255,0.08)] bg-[#030303]/95 backdrop-blur-2xl px-6 py-6 space-y-3 transition-all" aria-hidden="true">
+            <nav class="flex flex-col space-y-3" aria-label="Navegación móvil">
+                <a href="#inicio" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Inicio</a>
+                <a href="#sobre-mi" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Sobre mí</a>
+                <a href="#especialidad" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Especialidad</a>
+                <a href="#experiencia" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Experiencia</a>
+                <a href="#proyectos" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Proyectos</a>
+                <a href="#habilidades" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Habilidades</a>
+                <a href="#educacion" class="mobile-nav-link text-base font-medium text-[#f3f3ef] hover:text-[#dc4252] py-2 px-3 rounded-lg hover:bg-[#0b0b0c] transition-colors min-h-[44px] flex items-center">Educación</a>
+                <a href="#contacto" class="mobile-nav-link text-center mt-2 px-5 py-3 rounded-xl metal-red text-[#f8f8f6] font-code font-bold text-sm shadow-lg min-h-[44px] flex items-center justify-center">Contacto</a>
+            </nav>
         </div>
     </header>
-
-    <!-- Terminal Section -->
-    <section class="max-w-4xl mx-auto px-6 py-12 -mt-20 relative z-10">
-        <div class="bg-gray-900 rounded-xl shadow-2xl border border-gray-800 overflow-hidden">
-            <!-- Terminal Header -->
-            <div class="bg-gray-950 px-4 py-3 flex items-center gap-2 border-b border-gray-800">
-                <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                <span class="ml-4 text-xs text-gray-500 terminal-font">pablo@archlinux: ~</span>
+    <script type="module">function e(){let e=document.getElementById(`mobile-nav-btn`),t=document.getElementById(`mobile-nav-menu`),n=document.querySelectorAll(`.mobile-nav-link`);!e||!t||e.dataset.bound!==`true`&&(e.dataset.bound=`true`,e.addEventListener(`click`,()=>{t.classList.contains(`hidden`)?(t.classList.remove(`hidden`),e.setAttribute(`aria-expanded`,`true`),t.setAttribute(`aria-hidden`,`false`)):(t.classList.add(`hidden`),e.setAttribute(`aria-expanded`,`false`),t.setAttribute(`aria-hidden`,`true`))}),n.forEach(n=>{n.addEventListener(`click`,()=>{t.classList.add(`hidden`),e.setAttribute(`aria-expanded`,`false`),t.setAttribute(`aria-hidden`,`true`)})}))}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,e):e();</script>
+    <main class="w-full">
+        <!-- 1. Hero Tecnológico & Observabilidad -->
+        <section id="inicio" class="relative min-h-[100svh] flex items-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none select-none z-0" aria-hidden="true" data-astro-cid-umtrk6u7="">
+                <svg class="w-full h-full opacity-40 sm:opacity-55 transition-opacity duration-1000" style="mask-image: linear-gradient(105deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.75) 100%); -webkit-mask-image: linear-gradient(105deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.75) 100%);" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" data-astro-cid-umtrk6u7="">
+                    <defs data-astro-cid-umtrk6u7="">
+                        <linearGradient id="signal-grad-1" x1="0%" y1="0%" x2="100%" y2="100%" data-astro-cid-umtrk6u7="">
+                            <stop offset="0%" stop-color="#32070c" stop-opacity="0.6" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="45%" stop-color="#a31f30" stop-opacity="0.7" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="75%" stop-color="#dc4252" stop-opacity="0.5" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="100%" stop-color="#d4a63a" stop-opacity="0.3" data-astro-cid-umtrk6u7=""></stop>
+                        </linearGradient>
+                        <linearGradient id="signal-grad-2" x1="100%" y1="0%" x2="0%" y2="100%" data-astro-cid-umtrk6u7="">
+                            <stop offset="0%" stop-color="#0b0b0c" stop-opacity="0.7" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="30%" stop-color="#68101b" stop-opacity="0.6" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="70%" stop-color="#bc2b3c" stop-opacity="0.4" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="100%" stop-color="#030303" stop-opacity="0.1" data-astro-cid-umtrk6u7=""></stop>
+                        </linearGradient>
+                        <linearGradient id="signal-grad-3" x1="0%" y1="100%" x2="100%" y2="0%" data-astro-cid-umtrk6u7="">
+                            <stop offset="0%" stop-color="#4b0b13" stop-opacity="0.5" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="50%" stop-color="#d4a63a" stop-opacity="0.4" data-astro-cid-umtrk6u7=""></stop>
+                            <stop offset="100%" stop-color="#71747a" stop-opacity="0.2" data-astro-cid-umtrk6u7=""></stop>
+                        </linearGradient>
+                        <path id="path-trace-1" d="M-100,240 C280,180 520,480 880,340 C1240,200 1380,520 1580,440" data-astro-cid-umtrk6u7=""></path>
+                        <path id="path-trace-2" d="M-150,720 C340,820 640,520 980,660 C1340,800 1480,400 1600,340" data-astro-cid-umtrk6u7=""></path>
+                        <path id="path-trace-3" d="M-50,480 C400,310 700,710 1120,500 C1380,370 1490,620 1650,570" data-astro-cid-umtrk6u7=""></path>
+                    </defs>
+                    <g class="signal-ribbons" data-astro-cid-umtrk6u7="">
+                        <path d="M-100,240 C280,180 520,480 880,340 C1240,200 1380,520 1580,440" stroke="url(#signal-grad-1)" stroke-width="40" stroke-linecap="round" class="opacity-40 signal-flow-1" data-astro-cid-umtrk6u7=""></path>
+                        <path d="M-150,720 C340,820 640,520 980,660 C1340,800 1480,400 1600,340" stroke="url(#signal-grad-2)" stroke-width="32" stroke-linecap="round" class="opacity-35 signal-flow-2" data-astro-cid-umtrk6u7=""></path>
+                        <path d="M-50,480 C400,310 700,710 1120,500 C1380,370 1490,620 1650,570" stroke="url(#signal-grad-3)" stroke-width="24" stroke-linecap="round" class="opacity-30 signal-flow-3" data-astro-cid-umtrk6u7=""></path>
+                        <path d="M-100,240 C280,180 520,480 880,340 C1240,200 1380,520 1580,440" stroke="#dc4252" stroke-width="1.2" stroke-dasharray="12 8" class="opacity-35" data-astro-cid-umtrk6u7=""></path>
+                        <path d="M-150,720 C340,820 640,520 980,660 C1340,800 1480,400 1600,340" stroke="#e3bd5f" stroke-width="1.2" stroke-dasharray="8 6" class="opacity-30" data-astro-cid-umtrk6u7=""></path>
+                    </g>
+                    <g class="font-code font-normal text-[11px] tracking-widest uppercase opacity-25 fill-[#94958e]" data-astro-cid-umtrk6u7="">
+                        <text dy="-10" data-astro-cid-umtrk6u7=""><textPath href="#path-trace-1" startOffset="5%" data-astro-cid-umtrk6u7="">HNSW · vector search · runtime · query timeout · BKD storage · search_ef · construction_ef · graph nodes</textPath></text>
+                        <text dy="-8" data-astro-cid-umtrk6u7=""><textPath href="#path-trace-2" startOffset="12%" data-astro-cid-umtrk6u7="">binary store · latency · index rebuild · memory path · backend logic · debug trace · ChromaDB core · M: 16</textPath></text>
+                        <text dy="-6" data-astro-cid-umtrk6u7=""><textPath href="#path-trace-3" startOffset="20%" data-astro-cid-umtrk6u7="">micro kd-tree · query runtime · BKD binary store · vector distance · Cosine · L2 · SIMD instructions</textPath></text>
+                    </g>
+                </svg>
             </div>
-            <!-- Terminal Body -->
-            <div class="p-6 terminal-font text-sm md:text-base text-gray-300 h-64 overflow-y-auto bg-gray-900" id="terminal-content">
-                <!-- Content injected via JS -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="habilidades" class="bg-gray-900/50 py-24 border-y border-gray-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-white flex items-center gap-3">
-                <span class="w-8 h-1 bg-blue-500 rounded"></span> Competencias Técnicas
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Stack 1 -->
-                <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <h3 class="text-lg font-semibold text-white mb-4">Desarrollo</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-center gap-2">▹ Python</li>
-                        <li class="flex items-center gap-2">▹ Lógica Algorítmica</li>
-                        <li class="flex items-center gap-2">▹ PyCharm (IDE)</li>
-                    </ul>
-                </div>
-                <!-- Stack 2 -->
-                <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <h3 class="text-lg font-semibold text-white mb-4">Sistemas Operativos</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-center gap-2">▹ Arch Linux (BSPWM)</li>
-                        <li class="flex items-center gap-2">▹ Kali Linux & Parrot OS</li>
-                        <li class="flex items-center gap-2">▹ Ubuntu & macOS</li>
-                    </ul>
-                </div>
-                <!-- Stack 3 -->
-                <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <h3 class="text-lg font-semibold text-white mb-4">Ciberseguridad</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-center gap-2">▹ Nmap & Wifite</li>
-                        <li class="flex items-center gap-2">▹ John the Ripper</li>
-                        <li class="flex items-center gap-2">▹ Striker & Zphisher</li>
-                    </ul>
-                </div>
-                <!-- Stack 4 -->
-                <div class="bg-gray-950 p-6 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <h3 class="text-lg font-semibold text-white mb-4">Multimedia</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-center gap-2">▹ Adobe Premiere Pro</li>
-                        <li class="flex items-center gap-2">▹ Adobe Illustrator</li>
-                        <li class="flex items-center gap-2">▹ CapCut & Photoshop</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="proyectos" class="py-24 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-white flex items-center gap-3">
-            <span class="w-8 h-1 bg-blue-500 rounded"></span> Portafolio de Proyectos
-        </h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-                <div class="p-8">
-                    <div class="text-blue-500 text-sm font-mono mb-2">01. Ciberseguridad</div>
-                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Laboratorios de Auditoría</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Resolución de entornos vulnerables auditando redes y explotando debilidades de sistemas. Implementación de pruebas de penetración utilizando herramientas como Nmap, John the Ripper y Zphisher en máquinas virtuales aisladas.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
-                        <span class="bg-gray-950 px-2 py-1 rounded">Kali Linux</span>
-                        <span class="bg-gray-950 px-2 py-1 rounded">Nmap</span>
+            <div class="site-container relative z-10 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-left">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] shadow-sm">
+                                <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 bg-[#e3bd5f]"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#d4a63a]"></span></span>
+                                <span class="text-xs font-code font-medium text-[#f3f3ef] tracking-wide">Abierto a prácticas, proyectos y colaboraciones</span>
+                            </div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111113] border border-[rgba(255,255,255,0.08)] text-xs font-code text-[#b7b7b0]">
+                                <span class="text-[#dc4252] font-semibold">UCSP</span><span>·</span><span>Arequipa, Perú</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-sm sm:text-base font-code font-bold tracking-widest text-[#dc4252] uppercase">// Juan Rodrigo Callo Huayna</div>
+                            <div class="text-xs sm:text-sm font-code text-[#e3bd5f]">Desarrollador de Software · Ciencia de la Computación · C++ · Python · UI/UX</div>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-heading font-extrabold tracking-tight text-[#f8f8f6] leading-[1.08]">Construyo software, algoritmos y soluciones tecnológicas antes de que el sistema haga <span id="hero-typing-container" class="typing-wrapper inline-flex items-center" data-astro-cid-3i3tj75h=""><span class="typing-word text-metal-red font-extrabold tracking-tight" data-typing-text="crash" aria-label="crash" data-astro-cid-3i3tj75h="" data-initialized="true"><span aria-hidden="true" data-type-target="" data-astro-cid-3i3tj75h="">BUILD</span></span><span class="typing-cursor animate-cursor-blink" aria-hidden="true" data-astro-cid-3i3tj75h=""></span></span>
+                            <script type="module">function e(){let e=document.querySelector(`[data-typing-text]`);if(!e||e.dataset.initialized===`true`)return;e.dataset.initialized=`true`,e.dataset.typingText;let t=e.querySelector(`[data-type-target]`);if(!t)return;let n=window.matchMedia(`(prefers-reduced-motion: reduce)`).matches,r=[`crash`,`BUILD`,`CODE`,`OPTIMIZE`,`CREATE`],i=0;if(n){t.textContent=`crash`;return}let a=(e,n)=>{t.textContent=``;let r=0,i=()=>{if(t.textContent=e.slice(0,r+1),r+=1,r<e.length){let e=85+Math.random()*30;window.setTimeout(i,e)}else window.setTimeout(n,2200)};i()},o=e=>{let n=t.textContent||``,r=n.length,i=()=>{n=n.slice(0,r-1),t.textContent=n,--r,r>0?window.setTimeout(i,40):(t.textContent=``,window.setTimeout(e,300))};i()},s=()=>{a(r[i],()=>{o(()=>{i=(i+1)%r.length,s()})})};window.setTimeout(()=>{o(()=>{i=1,s()})},2500)}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,e):e();</script>.</h1>
+                        <p class="text-sm sm:text-base md:text-lg text-[#b7b7b0] font-sans max-w-2xl leading-relaxed">Estudiante de Ciencia de la Computación y desarrollador de software en Arequipa, Perú. Me enfoco en construir soluciones técnicas combinando programación algorítmica, optimización de sistemas y diseño UI/UX.</p>
+                        <div class="flex flex-wrap items-center gap-4 pt-2">
+                            <a href="#proyectos" class="inline-flex items-center justify-center gap-2.5 font-sans font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#bc2b3c] focus:ring-offset-2 focus:ring-offset-[#030303] select-none active:scale-[0.98] metal-red text-[#f8f8f6] shadow-[0_0_20px_rgba(188,43,60,0.2)] hover:shadow-[0_0_30px_rgba(220,66,82,0.35)] hover:brightness-110 border border-[rgba(255,255,255,0.14)] px-7 py-3.5 text-base min-h-[48px] "><span>Explorar Proyectos y Algoritmos</span></a>
+                            <a href="#contacto" class="inline-flex items-center justify-center gap-2.5 font-sans font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#bc2b3c] focus:ring-offset-2 focus:ring-offset-[#030303] select-none active:scale-[0.98] bg-[#111113] text-[#f3f3ef] border border-[rgba(255,255,255,0.08)] hover:bg-[#171719] hover:border-[rgba(255,255,255,0.18)] px-7 py-3.5 text-base min-h-[48px] "><span>Iniciar Contacto</span></a>
+                            <a href="/Juan_Rodrigo_Callo_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 font-sans font-semibold rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#bc2b3c] focus:ring-offset-2 focus:ring-offset-[#030303] select-none active:scale-[0.98] bg-transparent text-[#f3f3ef] border border-[rgba(188,43,60,0.42)] hover:bg-[#32070c]/30 hover:border-[#bc2b3c] px-5 py-2.5 text-sm min-h-[44px] "><span>Descargar CV (.pdf)</span></a>
+                        </div>
+                        <div class="pt-6 border-t border-[rgba(255,255,255,0.08)] space-y-2.5">
+                            <div class="text-[11px] font-code uppercase tracking-wider text-[#777871]">// Redes Profesionales y Perfiles Algorítmicos</div>
+                            <div class="flex flex-wrap items-center gap-2.5 ">
+                                <a href="https://github.com/r19junior" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Juan Rodrigo en GitHub" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] hover:border-[#bc2b3c]/60 text-xs sm:text-sm font-code text-[#f3f3ef] transition-all duration-200 min-h-[44px] ">
+                                    <span class="inline-flex items-center justify-center w-4 h-4 text-[#dc4252]" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></span><span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com/in/juan-rodrigo-callo-huayna-2493893a6/" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil profesional de Juan Rodrigo en LinkedIn" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] hover:border-[#bc2b3c]/60 text-xs sm:text-sm font-code text-[#f3f3ef] transition-all duration-200 min-h-[44px] ">
+                                    <span class="inline-flex items-center justify-center w-4 h-4 text-[#dc4252]" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></span><span>LinkedIn</span>
+                                </a>
+                                <a href="https://codeforces.com/profile/Jrodri19" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de programación competitiva en Codeforces" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] hover:border-[#bc2b3c]/60 text-xs sm:text-sm font-code text-[#f3f3ef] transition-all duration-200 min-h-[44px] ">
+                                    <span class="inline-flex items-center justify-center w-4 h-4 text-[#dc4252]" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><rect x="3.5" y="11.5" width="4.5" height="9.5" rx="1" fill="#dc4252"></rect><rect x="9.75" y="6.5" width="4.5" height="14.5" rx="1" fill="#d4a63a"></rect><rect x="16" y="3" width="4.5" height="18" rx="1" fill="#bc2b3c"></rect></svg></span><span>Codeforces</span>
+                                </a>
+                                <a href="https://x.com/Rod19MIT" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Juan Rodrigo en X" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] hover:border-[#bc2b3c]/60 text-xs sm:text-sm font-code text-[#f3f3ef] transition-all duration-200 min-h-[44px] ">
+                                    <span class="inline-flex items-center justify-center w-4 h-4 text-[#dc4252]" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span><span>X</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 w-full flex flex-col justify-center space-y-6">
+                        <div class="relative w-full rounded-2xl bg-[#070707]/90 border border-[rgba(188,43,60,0.42)] shadow-[0_0_50px_rgba(104,16,27,0.25)] backdrop-blur-xl overflow-hidden select-none">
+                            <div class="px-4 py-3 bg-[#0b0b0c] border-b border-[rgba(255,255,255,0.08)] flex items-center justify-between text-xs font-code">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#bc2b3c] flex items-center justify-center"><span class="w-1 h-1 rounded-full bg-white"></span></span><span class="w-3 h-3 rounded-full bg-[#d4a63a]"></span><span class="w-3 h-3 rounded-full bg-[#71747a]"></span></div>
+                                    <span class="text-[#b7b7b0] font-medium pl-2 border-l border-[rgba(255,255,255,0.14)]">// vector_engine_trace.log — HNSW + BKD</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-[11px] text-[#e3bd5f] bg-[#111113] px-2.5 py-0.5 rounded border border-[rgba(212,166,58,0.36)]"><span class="w-1.5 h-1.5 rounded-full bg-[#e3bd5f] animate-pulse"></span><span>INDEX STATUS: OPTIMIZED</span></div>
+                            </div>
+                            <div class="p-5 sm:p-6 space-y-5 font-code text-xs sm:text-sm">
+                                <div class="grid grid-cols-2 gap-3 pb-4 border-b border-[rgba(255,255,255,0.08)]">
+                                    <div class="p-3 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)]">
+                                        <div class="text-[10px] text-[#777871] uppercase tracking-wider">LATENCIA DE BÚSQUEDA</div>
+                                        <div class="text-lg sm:text-xl font-bold text-[#dc4252] mt-0.5">0.004622 s</div>
+                                        <div class="text-[10px] text-[#b7b7b0]">vs 0.000909 s original (con persistencia en disco)</div>
+                                    </div>
+                                    <div class="p-3 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)]">
+                                        <div class="text-[10px] text-[#777871] uppercase tracking-wider">PERSISTENCIA BINARIA</div>
+                                        <div class="text-lg sm:text-xl font-bold text-[#e3bd5f] mt-0.5">132.81 KB</div>
+                                        <div class="text-[10px] text-[#b7b7b0]">2,000 bloques BKD indexados (Dim: 16)</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2.5 text-xs font-code leading-relaxed text-[#b7b7b0]">
+                                    <div class="flex items-start gap-2"><span class="text-[#dc4252] font-bold select-none">[00.001s]</span><span class="text-[#f3f3ef]">INIT: Engine HNSW (M=16, ef_construction=200) loaded successfully.</span></div>
+                                    <div class="flex items-start gap-2"><span class="text-[#dc4252] font-bold select-none">[00.214s]</span><span>INDEX: micro kd-tree spatial partitions allocated in memory.</span></div>
+                                    <div class="flex items-start gap-2"><span class="text-[#e3bd5f] font-bold select-none">[00.613s]</span><span class="text-[#e3bd5f]">BUILD: 2,000 vectors inserted in 0.613640 s (binary serialization active).</span></div>
+                                    <div class="flex items-start gap-2"><span class="text-[#dc4252] font-bold select-none">[00.618s]</span><span class="text-[#f3f3ef]">QUERY: 10 nearest neighbors retrieved via Cosine distance in 4.62 ms.</span></div>
+                                    <div class="flex items-start gap-2 pt-1 border-t border-[rgba(255,255,255,0.08)]"><span class="text-[#71747a] select-none">[SYSTEM]</span><span class="text-[#b7b7b0]">Zero memory leaks detected. Disk flushing verified.</span></div>
+                                </div>
+                                <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-[rgba(255,255,255,0.08)] text-[11px] text-[#777871]">
+                                    <div class="flex items-center gap-2"><span class="inline-flex items-center justify-center w-3.5 h-3.5 text-[#dc4252]" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"></path></svg></span><span>Arquitectura: C++ Core + ChromaDB 0.6.3 + Python Bindings</span></div>
+                                    <div class="text-[#e3bd5f] font-semibold">&gt; READY FOR BENCHMARK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 font-code text-xs">
+                            <div class="p-3.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#dc4252] animate-ping shrink-0"></span>
+                                <div><div class="font-bold text-[#f3f3ef]">ChromaDB 0.6.3</div><div class="text-[11px] text-[#777871]">Core Modificado</div></div>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] flex items-center gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#e3bd5f] shrink-0"></span>
+                                <div><div class="font-bold text-[#f3f3ef]">2,000 Vectores</div><div class="text-[11px] text-[#777871]">Persistencia BKD</div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2 -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-                <div class="p-8">
-                    <div class="text-blue-500 text-sm font-mono mb-2">02. Software</div>
-                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Programación Competitiva</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Desarrollo de scripts avanzados y resolución de problemas de lógica matemática. Implementación de algoritmos eficientes y estructuras de datos complejos en entornos de desarrollo restrictivos.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
-                        <span class="bg-gray-950 px-2 py-1 rounded">Python</span>
-                        <span class="bg-gray-950 px-2 py-1 rounded">PyCharm</span>
+        <!-- 2. Sobre Mí & Enfoque Algorítmico -->
+        <section id="sobre-mi" class="py-24 relative overflow-hidden bg-[#070707] border-t border-[rgba(255,255,255,0.08)]">
+            <div class="site-container">
+                <div class="space-y-3 mb-10 md:mb-14 max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800/80 text-xs font-code font-semibold uppercase tracking-widest text-red-400">
+                        <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span><span>01. SOBRE MÍ &amp; ENFOQUE</span>
                     </div>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight text-white leading-tight">Comprensión integral desde<span class="text-metal-red block sm:inline"> los fundamentos teóricos</span></h2>
+                    <p class="text-sm sm:text-base md:text-lg text-slate-400 font-sans leading-relaxed">Estudiante de Ciencia de la Computación enfocado en construir software robusto, investigando cómo funcionan los sistemas en su nivel más esencial.</p>
                 </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-                <div class="p-8">
-                    <div class="text-blue-500 text-sm font-mono mb-2">03. Multimedia</div>
-                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Archivo del Hincha</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Gestión y producción de contenido multimedia en formato vertical (9:16) enfocado en análisis e historia del fútbol peruano. Flujo de trabajo profesional utilizando la suite de Adobe para edición de video y corrección de color.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-500">
-                        <span class="bg-gray-950 px-2 py-1 rounded">Premiere Pro</span>
-                        <span class="bg-gray-950 px-2 py-1 rounded">CapCut</span>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                    <!-- Bloque Condensado de Presentación (7 columnas) -->
+                    <div class="lg:col-span-7 space-y-6 text-[#b7b7b0] text-sm sm:text-base leading-relaxed font-sans">
+                        <div class="p-6 sm:p-8 rounded-3xl bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] space-y-4 hover:border-[rgba(188,43,60,0.42)] transition-colors">
+                            <h3 class="text-xs uppercase font-code tracking-widest text-[#dc4252] font-semibold flex items-center gap-2"><span>// PERFIL PROFESIONAL &amp; ENFOQUE TÉCNICO</span></h3>
+                            <p class="text-base text-[#f8f8f6] font-semibold">Soy <span class="text-[#dc4252]">Juan Rodrigo Callo Huayna</span>, estudiante de Ciencia de la Computación en la <span class="text-[#e3bd5f]">Universidad Católica San Pablo</span> (Arequipa).</p>
+                            <p>Construyo software desde los cimientos: <strong class="text-[#f8f8f6]">algoritmos de búsqueda vectorial en C++</strong>, backend concurrente con <strong class="text-[#f8f8f6]">Elixir/OTP</strong>, simulación física con <strong class="text-[#f8f8f6]">Python</strong> y automatización modular en <strong class="text-[#f8f8f6]">VBA</strong>.</p>
+                            <p class="text-xs sm:text-sm text-[#94958e] border-t border-[rgba(255,255,255,0.06)] pt-3.5">Participo activamente en la representación y comunidad estudiantil de mi departamento, coordinando equipos e impulsando soluciones tecnológicas reales para la universidad.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-gray-900 bg-gray-950 py-8 text-center">
-        <p class="text-gray-600 text-sm">
-            &copy; 2026 Pablo Joaquin Gutierrez Pilco. UCSP.
-        </p>
-    </footer>
-
-    <!-- Interactive Scripts -->
-    <script>
-        // Typing Effect Logic
-        const titles = [
-            "Estudiante de Ciencia de la Computación",
-            "Especialista en Entornos Linux",
-            "Auditor de Redes y Seguridad",
-            "Desarrollador Python"
-        ];
-        
-        let titleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typingSpeed = 50;
-        const deletingSpeed = 30;
-        const delayBetweenTitles = 2000;
-        
-        function typeEffect() {
-            const currentTitle = titles[titleIndex];
-            const textElement = document.getElementById("typing-text");
-            
-            if (isDeleting) {
-                textElement.textContent = currentTitle.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                textElement.textContent = currentTitle.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            let speed = isDeleting ? deletingSpeed : typingSpeed;
-            
-            if (!isDeleting && charIndex === currentTitle.length) {
-                speed = delayBetweenTitles;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                titleIndex = (titleIndex + 1) % titles.length;
-                speed = 500;
-            }
-            
-            setTimeout(typeEffect, speed);
-        }
-
-        // Terminal Simulation Logic
-        const terminalCommands = [
-            { cmd: "neofetch", output: "OS: Arch Linux x86_64<br>Host: Acer Predator<br>Kernel: 6.x.x-arch1-1<br>WM: bspwm<br>Terminal: alacritty" },
-            { cmd: "python3 --version", output: "Python 3.12.0" },
-            { cmd: "sudo nmap -sV -p- 192.168.1.10", output: "Starting Nmap...<br>PORT   STATE SERVICE VERSION<br>22/tcp open  ssh     OpenSSH 8.9p1<br>80/tcp open  http    Apache httpd 2.4.52" },
-            { cmd: "cat status.txt", output: "[✓] Laboratorios completados.<br>[✓] Scripts optimizados.<br>[_] Esperando nuevo reto..." }
-        ];
-
-        const terminalContent = document.getElementById("terminal-content");
-        let cmdIndex = 0;
-
-        function renderCommand() {
-            if (cmdIndex >= terminalCommands.length) return;
-            
-            const item = terminalCommands[cmdIndex];
-            
-            // Render Prompt and Command
-            const cmdLine = document.createElement("div");
-            cmdLine.className = "mb-1 fade-in";
-            cmdLine.innerHTML = `<span class="text-green-500">pablo@archlinux</span>:<span class="text-blue-500">~</span>$ ${item.cmd}`;
-            terminalContent.appendChild(cmdLine);
-            
-            // Render Output after delay
-            setTimeout(() => {
-                const outLine = document.createElement("div");
-                outLine.className = "mb-4 text-gray-400 fade-in";
-                outLine.innerHTML = item.output;
-                terminalContent.appendChild(outLine);
-                terminalContent.scrollTop = terminalContent.scrollHeight;
-                
-                cmdIndex++;
-                setTimeout(renderCommand, 1500); // Delay between commands
-            }, 800);
-        }
-
-        // Initialize scripts on load
-        window.onload = () => {
-            setTimeout(typeEffect, 500);
-            setTimeout(renderCommand, 1000);
-        };
-    </script>
-</body>
-</html>
+                    <!-- Tarjeta de Enfoque y Pilares (5 columnas) -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="rounded-3xl p-7 bg-[#0b0b0c] border border-[rgba(255,255,255,0.08)] space-y-6 shadow-xl">
+                            <div class="text-sm font-heading font-bold text-[#f8f8f6] uppercase tracking-wider flex items-center gap-2.5">
+                                <span class="w-2.5 h-2.5 rounded-full bg-[#dc4252]"></span><span>Pilares del Enfoque Técnico</span>
+                            </div>
+                            <ul class="space-y-4 font-code text-xs sm:text-sm text-[#b7b7b0]">
+                                <li class="flex items-start gap-3">
+                                    <span class="inline-flex items-center justify-center w-4 h-4 text-[#dc4252] shrink-0 mt-0.5" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                                    <div><span class="text-[#f8f8f6] font-semibold block">Profundidad Algorítmica</span><span class="text-xs text-[#777871]">Estructuras de búsqueda, kd-trees y grafos navegables.</span></div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="inline-flex items-center justify-center w-4 h-4 text-[#dc4252] shrink-0 mt-0.5" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><polyline points="20 6 9 17 4 12
